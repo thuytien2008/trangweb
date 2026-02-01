@@ -1,103 +1,140 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <title>CLB Ngoại Khóa - THPT Vĩnh Cửu</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f2f2f2;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-    }
-    header {
-      background: #00539C;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    main {
-      max-width: 900px;
-      margin: 20px auto;
-      background: white;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    h1, h2 {
-      color: #003366;
-    }
-    .club {
-      border-bottom: 1px solid #ddd;
-      padding: 15px 0;
-    }
-    .club:last-child {
-      border: none;
-    }
-    .club img {
-      max-width: 100%;
-      height: auto;
-    }
-    .info {
-      margin-top: 20px;
-      padding: 10px;
-      background: #eef;
-      border-left: 4px solid #00539C;
-    }
-    footer {
-      text-align: center;
-      padding: 15px;
-      font-size: 14px;
-      background: #ddd;
-      margin-top: 30px;
-    }
-    a { color: #00539C; text-decoration: none;}
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>CLB Ngoại Khóa - THPT Vĩnh Cửu</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#f2f2f2;
+}
+
+/* Banner */
+header{
+    background:#004a8f;
+    color:white;
+    text-align:center;
+    padding-bottom:20px;
+}
+
+header img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+header h1{
+    margin:10px 0;
+}
+
+/* Nội dung */
+main{
+    max-width:1000px;
+    margin:auto;
+    background:white;
+    padding:20px;
+}
+
+.section-title{
+    text-align:center;
+    color:#004a8f;
+    margin-bottom:20px;
+}
+
+/* CLB */
+.club{
+    display:flex;
+    gap:20px;
+    margin-bottom:30px;
+    border-bottom:1px solid #ddd;
+    padding-bottom:20px;
+}
+
+.club img{
+    width:250px;
+    height:170px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.club-content h3{
+    color:#004a8f;
+}
+
+.club-content a{
+    text-decoration:none;
+    color:#0066cc;
+    font-weight:bold;
+}
+
+.club-content a:hover{
+    text-decoration:underline;
+}
+
+/* Box info */
+.info{
+    background:#e9f1ff;
+    padding:15px;
+    border-left:5px solid #004a8f;
+    margin-bottom:20px;
+}
+
+/* Footer */
+footer{
+    background:#ddd;
+    text-align:center;
+    padding:15px;
+}
+</style>
 </head>
+
 <body>
 
 <header>
-  <div class="banner">
-			<img src="https://thptvinhcuu.com/public/userfiles/slider/banner1.jpg" alt="Banner THPT Vĩnh Cửu" style="width:100%; height:300px; object-fit:cover;">
-			<h1>CLB ngoại khóa trường THPT Vĩnh Cửu</h1> 			
-		</div>
- </header>
+    <img src="https://thptvinhcuu.com/public/userfiles/slider/banner1.jpg" alt="Banner CLB">
+    <h1>CÂU LẠC BỘ NGOẠI KHÓA TRƯỜNG THPT VĨNH CỬU</h1>
+    <p>Năng động – Đam mê – Tỏa sáng</p>
+</header>
 
 <main>
-  <!-- Giới thiệu chung -->
-  <section class="info">
-    <h2>Giới thiệu</h2>
-    <p>Hoạt động năng nổ và hiệu quả. Cháy hết mình trong các cuộc chơi. Giành những giải thưởng cao nhất.</p>
-  </section>
 
-  <!-- CLB Tiếp Sức Mùa Thi -->
-  <section class="club">
-    <h2>CLB Tiếp Sức Mùa Thi</h2>
-    <p>CLB Tiếp Sức Mùa Thi đồng hành cùng thí sinh trong kỳ thi quan trọng, hỗ trợ thủ tục, di chuyển và động viên tinh thần.</p>
-    <a href="#">Xem chi tiết CLB Tiếp Sức Mùa Thi</a>
-  </section>
+<!-- Giới thiệu -->
+<div class="info">
+<h2 class="section-title">Giới thiệu</h2>
+<p>Các câu lạc bộ ngoại khóa giúp học sinh rèn luyện kỹ năng, phát triển năng khiếu và tham gia nhiều hoạt động bổ ích.</p>
+</div>
 
-  <!-- CLB Thể Thao -->
-  <section class="club">
-    <h2>CLB Thể Thao</h2>
-    <p>Môi trường rèn luyện thể chất, nâng cao sức khỏe, giúp học sinh phát triển thể lực và tinh thần đoàn kết.</p>
-    <a href="#">Xem chi tiết CLB Thể Thao</a>
-  </section>
+<!-- CLB Tiếp sức mùa thi -->
+<div class="club">
+<img src="https://url-shortener.me/AAMW" alt="Tiếp sức mùa thi">
 
-   <!-- Thông tin liên hệ -->
-  <section class="info">
-    <h2>Thông Tin Liên Hệ</h2>
-    <p>Địa chỉ: Khu phố Phú Trạch, Phường Tân Triều, Tỉnh Đồng Nai</p>
-    <p> Thuỷ Tiên, Bích Ngọc, Hồng Lam, Phương Anh, Tâm Anh, Khánh Vy, Như Hà - 12A1 </p>
-  </section>
-    </main>
+<div class="club-content">
+<h3>CLB Tiếp Sức Mùa Thi</h3>
+<p>Hỗ trợ thí sinh trong các kỳ thi quan trọng, hướng dẫn thủ tục và động viên tinh thần.</p>
+<a href="#">Xem chi tiết</a>
+</div>
+</div>
 
+<!-- CLB Thể thao -->
+<div class="club">
+<img src="https://url-shortener.me/AAN1" alt="CLB Thể thao">
+
+<div class="club-content">
+<h3>CLB Thể Thao</h3>
+<p>Rèn luyện thể chất, nâng cao sức khỏe và tinh thần đoàn kết.</p>
+<a href="#">Xem chi tiết</a>
+</div>
+</div>
+<div class="info">
+<h2 class="section-title">Thông tin liên hệ</h2>
+<p>Địa chỉ: Khu phố Phú Trạch, Phường Tân Triều, Đồng Nai</p>
+<p>Thuỷ Tiên, Bích Ngọc, Phương Anh, Khánh Vy, Hồng Lam, Như Hà, Tâm Anh - 12A1 </p>
+</div>
+</main>
 <footer>
-  &copy; 2026 CLB Ngoại Khóa - THPT Vĩnh Cửu
+&copy; 2026 CLB Ngoại Khóa - THPT Vĩnh Cửu
 </footer>
-
 </body>
 </html>
